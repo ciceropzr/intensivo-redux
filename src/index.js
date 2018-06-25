@@ -10,7 +10,7 @@ import countReducer from './module'
 // Components
 import App from './App'
 
-const store = createStore(countReducer)
+const store = createStore(countReducer, window.devToolsExtension && window.devToolsExtension())
 ReactDOM.render(
 <Provider store={store}>
   <App />
